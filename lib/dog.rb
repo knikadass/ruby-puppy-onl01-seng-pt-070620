@@ -13,4 +13,22 @@ class Dog
     @@all 
   end
   
+  def self.print all 
+    @@all.each do |dog|
+      puts dog.name
+  end
+ end
+ 
+ def self.clear_all
+   @all.clear
 end
+
+def save
+  @@all << self
+end
+
+ 
+ 
+ 
+ 
+ 
